@@ -1,0 +1,71 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static "main.css" %}" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static "js.js" %}"></script>
+    <title>Title</title>
+</head>
+<body>
+    <nav id="navigation">
+        <ul>
+            <li id="streamItem" class="menuItem">
+                <a href="#">Stream</a>
+            </li>
+            <li  id="newsletterItem" class="menuItem">
+                <a href="#">Newsletter</a>
+            </li>
+            <li  id="aboutItem" class="menuItem">
+                <a href="#">About</a>
+            </li>
+            <li  id="featuresItem" class="menuItem">
+                <a href="#">Features</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+
+        <div id="menuIcon">
+            <span></span><span></span><span></span>
+
+        </div>
+        <h1>The Blue Tide</h1>
+    </header>
+
+    <div id="mainBody">
+        <div class="section" id="Stream">
+            <h1>Stream Spotlight</h1>
+            <div id="streamBox">
+                <iframe src="https://player.twitch.tv/?channel=brostein553" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+            </div>
+            <div id="chatBox">
+                <div id="chatSlider">
+                    <span class="fa fa-angle-right"></span>
+                    <p>Chat</p>
+                </div>
+
+                <iframe src="https://www.twitch.tv/brostein553/chat?popout=" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <p>Lorem ipsum dolor amet artisan kombucha trust fund cloud bread craft beer tacos succulents tote bag marfa mlkshk irony. Hashtag taiyaki direct trade, squid sartorial 8-bit viral literally sriracha beard enamel pin iPhone keytar air plant brunch. Cliche mixtape 8-bit, kogi succulents vape adaptogen farm-to-table food truck bitters banh mi man braid +1.</p>
+        </div>
+        <div class="section" id="Newsletter">
+            <h1>Newsletter</h1>
+        </div>
+        <div class="section" id="About">
+            <h1>About</h1>
+        </div>
+        <div class="section" id="Features">
+            <h1>Features</h1>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
